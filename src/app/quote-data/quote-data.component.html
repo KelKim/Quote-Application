@@ -1,0 +1,10 @@
+<div>
+    <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+    <div *ngFor='let quote of quotes'>
+      <p>Author:{{quote.author}}</p>
+      <p>Publisher:{{quote.publisher}}</p>
+      <p>Quote:{{quote.quote}}</p>
+      <p>No of Votes: {{quote.noOfVotes}}</p>
+    </div>
+  </div>
+  

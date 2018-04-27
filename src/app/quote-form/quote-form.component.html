@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <h1>Quotes</h1>
+    <p>Enter Quotes:</p>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' >
+      <input class="form-control mb15" type="text" [(ngModel)]="author" autocomplete="off" name="author" id="author" placeholder="Enter Author" >
+      <input class="form-control mb15" type="text" [(ngModel)]="publisher" autocomplete="off" name="publisher" id="publisher" placeholder="Enter publisher" >
+      <textarea class="form-control mb15" type="text" [(ngModel)]="quote" autocomplete="off" name="quote" id="quote" placeholder="Enter quote" autocomplete="off" ></textarea>
+      <button type="submit" class="btn btn-success-alt btn-xs" >Submit</button>
+    </form>
+  </div>
+  <div class="col-md-4"></div>
+</div>
